@@ -1,4 +1,17 @@
 <!----- BEGIN GHOST DOCS HEADER ----->
+
+# playwright-config
+
+[![npm-version](https://img.shields.io/npm/v/@jill64/playwright-config)](https://npmjs.com/package/@jill64/playwright-config) [![npm-license](https://img.shields.io/npm/l/@jill64/playwright-config)](https://npmjs.com/package/@jill64/playwright-config) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/playwright-config)](https://npmjs.com/package/@jill64/playwright-config) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/playwright-config)](https://npmjs.com/package/@jill64/playwright-config)
+
+🎭 Reusable My Playwright Config
+
+## Installation
+
+```sh
+npm i @jill64/playwright-config
+```
+
 <!----- END GHOST DOCS HEADER ----->
 
 ## Usage
