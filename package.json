@@ -1,0 +1,48 @@
+{
+  "name": "@jill64/playwright-config",
+  "description": "🎭 Reusable My Playwright Config",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "bugs": "https://github.com/jill64/playwright-config/issues",
+  "homepage": "https://github.com/jill64/playwright-config#readme",
+  "files": [
+    "dist",
+    "!**/*.test.*",
+    "!*.test.*",
+    "!*.spec.*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jill64/playwright-config.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "scripts": {
+    "build": "tsc && npx publint",
+    "prepack": "npm run build",
+    "test": "vitest",
+    "lint": "npx eslint . && npx depcheck",
+    "format": "npx prettier -w ."
+  },
+  "peerDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "devDependencies": {
+    "@jill64/eslint-config-ts": "0.1.0",
+    "@playwright/test": "1.40.1",
+    "@types/node": "20.10.1",
+    "typescript": "5.3.2",
+    "vitest": "0.34.6"
+  }
+}
