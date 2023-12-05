@@ -1,7 +1,7 @@
 {
   "name": "@jill64/playwright-config",
   "description": "🎭 Reusable My Playwright Config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -9,10 +9,7 @@
   "bugs": "https://github.com/jill64/playwright-config/issues",
   "homepage": "https://github.com/jill64/playwright-config#readme",
   "files": [
-    "dist",
-    "!**/*.test.*",
-    "!*.test.*",
-    "!*.spec.*"
+    "dist"
   ],
   "exports": {
     ".": {
@@ -27,7 +24,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [
+    "config",
+    "playwright",
+    "reusable"
+  ],
   "scripts": {
     "build": "tsc && npx publint",
     "prepack": "npm run build",
@@ -38,7 +39,9 @@
   "peerDependencies": {
     "@playwright/test": "^1.40.0"
   },
+  "prettier": "@jill64/prettier-config",
   "devDependencies": {
+    "@jill64/prettier-config": "1.0.0",
     "@jill64/eslint-config-ts": "1.0.0",
     "@playwright/test": "1.40.1",
     "@types/node": "20.10.3",
