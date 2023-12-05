@@ -6,19 +6,19 @@
 
 🎭 Reusable My Playwright Config
 
+<!----- END GHOST DOCS HEADER ----->
+
 ## Installation
 
 ```sh
-npm i @jill64/playwright-config
+npm i -D @jill64/playwright-config
 ```
-
-<!----- END GHOST DOCS HEADER ----->
 
 ## Usage
 
-```ts
-// playwright.config.ts
+playwright.config.ts
 
+```ts
 import { extendsConfig } from '@jill64/playwright-config'
 
 export default extendsConfig({
