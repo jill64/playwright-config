@@ -24,7 +24,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [
+    "config",
+    "playwright"
+  ],
   "scripts": {
     "build": "tsc && npx publint",
     "prepack": "npm run build",
