@@ -26,7 +26,8 @@
   },
   "keywords": [
     "config",
-    "playwright"
+    "playwright",
+    "reusable"
   ],
   "scripts": {
     "build": "tsc && npx publint",
