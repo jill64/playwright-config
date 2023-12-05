@@ -9,10 +9,7 @@
   "bugs": "https://github.com/jill64/playwright-config/issues",
   "homepage": "https://github.com/jill64/playwright-config#readme",
   "files": [
-    "dist",
-    "!**/*.test.*",
-    "!*.test.*",
-    "!*.spec.*"
+    "dist"
   ],
   "exports": {
     ".": {
@@ -38,7 +35,9 @@
   "peerDependencies": {
     "@playwright/test": "^1.40.0"
   },
+  "prettier": "@jill64/prettier-config",
   "devDependencies": {
+    "@jill64/prettier-config": "1.0.0",
     "@jill64/eslint-config-ts": "0.1.6",
     "@playwright/test": "1.40.1",
     "@types/node": "20.10.3",
