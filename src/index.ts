@@ -1,6 +1,6 @@
 import type { Config } from '@playwright/test'
 import { defineConfig, devices } from '@playwright/test'
-import process from 'process'
+import process from 'node:process'
 
 export const extendsConfig = (config: Config) =>
   defineConfig({
