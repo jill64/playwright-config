@@ -28,3 +28,22 @@ export default extendsConfig({
   }
 })
 ```
+
+## Use Vite Local Preview
+
+```ts
+import { extendsConfig, vitePreview } from '@jill64/playwright-config'
+
+export default extendsConfig(vitePreview)
+```
+
+## Use Real Server
+
+```ts
+import { extendsConfig, vitePreview, branchPreview } from '@jill64/playwright-config'
+
+export default extendsConfig(branchPreview(
+  provider: 'cloudflare',
+  fallback: vitePreview
+))
+```
