@@ -37,7 +37,7 @@ export const branchPreview = (
             ? `https://${project_name}.pages.dev`
             : provider === 'vercel'
               ? `https://${project_name}.vercel.app`
-              : `https://main--${project_name}.netlify.app`
+              : `https://${project_name}.netlify.app`
       }
     }
   }
