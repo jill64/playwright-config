@@ -1,7 +1,7 @@
 import { Config } from '@playwright/test'
 import { vitePreview } from './vitePreview.js'
 
-const providers = ['cloudflare'] as const
+const providers = ['cloudflare', 'vercel'] as const
 type Provider = (typeof providers)[number]
 
 const { GITHUB_REF_NAME, GITHUB_REPOSITORY } = process.env
@@ -23,7 +23,7 @@ export const branchPreview = (
     return fallback
   }
 
-  const project_name = project ?? GITHUB_REPOSITORY?.split('/')[1]
+  const project_name = project ?? GITHUB_REPOSITORY?.split('/')?.[1]
 
   if (!project_name) {
     return fallback
@@ -32,7 +32,10 @@ export const branchPreview = (
   if (GITHUB_REF_NAME === 'main') {
     return {
       use: {
-        baseURL: `https://${project_name}.pages.dev`
+        baseURL:
+          provider === 'cloudflare'
+            ? `https://${project_name}.pages.dev`
+            : `https://${project_name}.vercel.app`
       }
     }
   }
@@ -45,7 +48,10 @@ export const branchPreview = (
 
   return {
     use: {
-      baseURL: `https://${sub}.${project_name}.pages.dev`
+      baseURL:
+        provider === 'cloudflare'
+          ? `https://${sub}.${project_name}.pages.dev`
+          : `https://${project_name}-git-${sub}-jill-64.vercel.app`
     }
   }
 }
