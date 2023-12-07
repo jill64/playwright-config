@@ -6,12 +6,18 @@ type Provider = (typeof providers)[number]
 
 const { GITHUB_REF_NAME, GITHUB_REPOSITORY } = process.env
 
-export const branchPreview = (options: {
-  project?: string
-  provider: Provider
-  fallback?: Config
-}): Config => {
-  const { project, fallback = vitePreview } = options
+export const branchPreview = (
+  provider: Provider,
+  options?: {
+    project?: string
+    fallback?: Config
+  }
+): Config => {
+  const { project, fallback = vitePreview } = options ?? {}
+
+  if (!providers.includes(provider)) {
+    return fallback
+  }
 
   if (!GITHUB_REF_NAME) {
     return fallback
