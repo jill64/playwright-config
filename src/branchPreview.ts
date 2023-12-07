@@ -1,18 +1,18 @@
 import { Config } from '@playwright/test'
+import { vitePreview } from './vitePreview.js'
 
 const providers = ['cloudflare'] as const
 type Provider = (typeof providers)[number]
 
 const { GITHUB_REF_NAME, GITHUB_REPOSITORY } = process.env
 
-export const branchPreview = ({
-  project,
-  fallback
-}: {
+export const branchPreview = (options: {
   project?: string
   provider: Provider
-  fallback: Config
+  fallback?: Config
 }): Config => {
+  const { project, fallback = vitePreview } = options
+
   if (!GITHUB_REF_NAME) {
     return fallback
   }
