@@ -1,7 +1,7 @@
 import { Config } from '@playwright/test'
 import { vitePreview } from './vitePreview.js'
 
-const providers = ['cloudflare', 'vercel', 'netlify'] as const
+const providers = ['cloudflare', 'vercel'] as const
 type Provider = (typeof providers)[number]
 
 const { GITHUB_REF_NAME, GITHUB_REPOSITORY, HOSTING_PROVIDER } = process.env
@@ -62,9 +62,7 @@ export const branchPreview = (options?: {
     const baseURL =
       provider === 'cloudflare'
         ? `https://${project_name}.pages.dev`
-        : provider === 'vercel'
-          ? `https://${project_name}.vercel.app`
-          : `https://${project_name}.netlify.app`
+        : `https://${project_name}.vercel.app`
 
     console.info(`Using ${baseURL} for preview.`)
 
@@ -91,9 +89,7 @@ export const branchPreview = (options?: {
   const baseURL =
     provider === 'cloudflare'
       ? `https://${sub}.${project_name}.pages.dev`
-      : provider === 'vercel'
-        ? `https://${project_name}-git-${sub}-jill-64.vercel.app`
-        : `https://${sub}--${project_name}.netlify.app`
+      : `https://${project_name}-git-${sub}-jill-64.vercel.app`
 
   console.info(`Using ${baseURL} for preview.`)
 
