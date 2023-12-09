@@ -7,8 +7,20 @@ type Provider = (typeof providers)[number]
 const { GITHUB_REF_NAME, GITHUB_REPOSITORY, HOSTING_PROVIDER } = process.env
 
 export const branchPreview = (options?: {
+  /**
+   * Using Hosting Provider
+   * @default process.env.HOSTING_PROVIDER
+   */
   provider?: Provider
+  /**
+   * Project name
+   * @default process.env.GITHUB_REPOSITORY?.split('/')?.[1]
+   */
   project?: string
+  /**
+   * Fallback config
+   * @default vitePreview
+   */
   fallback?: Config
 }): Config => {
   const {
