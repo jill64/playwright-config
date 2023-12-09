@@ -42,10 +42,10 @@ export default extendsConfig(vitePreview)
 ```ts
 import { extendsConfig, vitePreview, branchPreview } from '@jill64/playwright-config'
 
-export default extendsConfig(branchPreview(
+export default extendsConfig(branchPreview({
   provider: 'cloudflare',
   fallback: vitePreview
-))
+})
 ```
 
 ## GitHub Workflow
@@ -57,8 +57,9 @@ on: push
 
 jobs:
   test:
-    uses: jill64/playwright-config/.github/workflows/run-playwright.yml@v2
+    uses: jill64/playwright-config/.github/workflows/run-playwright.yml@v2.1.0
     with:
       pre-test: npm run build
       test-command: npx playwright test
+      provider: cloudflare
 ```
