@@ -47,3 +47,18 @@ export default extendsConfig(branchPreview(
   fallback: vitePreview
 ))
 ```
+
+## GitHub Workflow
+
+```yml
+name: CI
+
+on: push
+
+jobs:
+  test:
+    uses: jill64/playwright-config/.github/workflows/run-playwright.yml@v2
+    with:
+      pre-test: npm run build
+      test-command: npx playwright test
+```
