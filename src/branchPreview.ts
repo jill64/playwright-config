@@ -42,7 +42,10 @@ export const branchPreview = (
     }
   }
 
-  const sub = GITHUB_REF_NAME.replace(/\//g, '-').replace('.', '-')
+  const sub =
+    provider === 'vercel'
+      ? GITHUB_REF_NAME.replace(/\//g, '-').replace('.', '')
+      : GITHUB_REF_NAME.replace(/\//g, '-').replace('.', '-')
 
   if (sub.length > 28) {
     return fallback
