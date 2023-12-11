@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/playwright-config/issues",
   "homepage": "https://github.com/jill64/playwright-config#readme",
   "files": [
@@ -19,7 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/playwright-config.git"
+    "url": "https://github.com/jill64/playwright-config.git",
+    "image": "https://opengraph.githubassets.com/20740876f782b816997a73ff66658ac108657bbda12cbe506f8ef866867c7db8/jill64/playwright-config"
   },
   "publishConfig": {
     "access": "public"
