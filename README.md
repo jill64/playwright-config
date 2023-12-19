@@ -63,3 +63,11 @@ jobs:
       test-command: npx playwright test
       provider: cloudflare
 ```
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
