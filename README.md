@@ -2,11 +2,11 @@
 
 # @jill64/playwright-config
 
-
 <!----- BEGIN GHOST DOCS BADGES ----->
-<a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/npm/v/@jill64/playwright-config" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/npm/l/@jill64/playwright-config" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/npm/dm/@jill64/playwright-config" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/bundlephobia/min/@jill64/playwright-config" alt="npm-min-size" /></a> <a href="https://github.com/jill64/playwright-config/actions/workflows/duplex-playwright.yml"><img src="https://github.com/jill64/playwright-config/actions/workflows/duplex-playwright.yml/badge.svg" alt="duplex-playwright.yml" /></a> <a href="https://github.com/jill64/playwright-config/actions/workflows/run-playwright.yml"><img src="https://github.com/jill64/playwright-config/actions/workflows/run-playwright.yml/badge.svg" alt="run-playwright.yml" /></a>
-<!----- END GHOST DOCS BADGES ----->
 
+<a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/npm/v/@jill64/playwright-config" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/npm/l/@jill64/playwright-config" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/npm/dm/@jill64/playwright-config" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/playwright-config"><img src="https://img.shields.io/bundlephobia/min/@jill64/playwright-config" alt="npm-min-size" /></a> <a href="https://github.com/jill64/playwright-config/actions/workflows/duplex-playwright.yml"><img src="https://github.com/jill64/playwright-config/actions/workflows/duplex-playwright.yml/badge.svg" alt="duplex-playwright.yml" /></a> <a href="https://github.com/jill64/playwright-config/actions/workflows/run-playwright.yml"><img src="https://github.com/jill64/playwright-config/actions/workflows/run-playwright.yml/badge.svg" alt="run-playwright.yml" /></a>
+
+<!----- END GHOST DOCS BADGES ----->
 
 🎭 Reusable My Playwright Config
 
@@ -72,6 +72,6 @@ jobs:
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <!----- END GHOST DOCS FOOTER ----->
