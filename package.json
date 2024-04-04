@@ -50,7 +50,7 @@
   "devDependencies": {
     "@jill64/prettier-config": "1.0.0",
     "@jill64/eslint-config-ts": "1.1.16",
-    "@playwright/test": "1.42.1",
+    "@playwright/test": "1.43.0",
     "@types/node": "20.12.4",
     "typescript": "5.4.4",
     "vitest": "1.4.0"
