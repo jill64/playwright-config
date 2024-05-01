@@ -1,7 +1,7 @@
 {
   "name": "@jill64/playwright-config",
   "description": "🎭 Reusable My Playwright Config",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
