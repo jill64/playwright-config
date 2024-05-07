@@ -10,6 +10,9 @@ on:
         default: npx playwright test
       hosting-provider:
         type: string
+      artifact-name:
+        type: string
+        default: playwright-test-report
 
 jobs:
   run-playwright:
@@ -44,5 +47,5 @@ jobs:
       - name: Uplaod Artifact
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
         with:
-          name: playwright-test-report
+          name: ${{ inputs.artifact-name }}
           path: test-results
