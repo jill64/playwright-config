@@ -17,6 +17,7 @@ jobs:
     with:
       pre-test: ${{ inputs.pre-test }}
       test-command: ${{ inputs.test-command }}
+      artifact-name: playwright-test-report-local
 
   remote:
     uses: ./.github/workflows/run-playwright.yml
@@ -24,3 +25,4 @@ jobs:
       pre-test: ${{ inputs.pre-test }}
       test-command: ${{ inputs.test-command }}
       hosting-provider: ${{ inputs.hosting-provider }}
+      artifact-name: playwright-test-report-remote
