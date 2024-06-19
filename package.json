@@ -1,7 +1,7 @@
 {
   "name": "@jill64/playwright-config",
   "description": "🎭 Reusable My Playwright Config",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/playwright-config.git",
-    "image": "https://opengraph.githubassets.com/fd2e7b2de4a77018cd8a1b8b72d155396989f194e5f8438b6545f1838c6ddb1e/jill64/playwright-config"
+    "image": "https://opengraph.githubassets.com/2f2beb285dcbf812b3726dbcd2830ed191d423c90d8e600ef33f8052f181d85a/jill64/playwright-config"
   },
   "publishConfig": {
     "access": "public"
@@ -51,7 +51,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@jill64/eslint-config-ts": "1.1.26",
     "@playwright/test": "1.44.1",
-    "@types/node": "20.14.5",
+    "@types/node": "20.14.6",
     "typescript": "5.4.5",
     "vitest": "1.6.0"
   }
