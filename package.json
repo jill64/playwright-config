@@ -51,7 +51,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@jill64/eslint-config-ts": "2.0.1",
     "@playwright/test": "1.49.1",
-    "@types/node": "22.10.4",
+    "@types/node": "22.10.5",
     "typescript": "5.7.2",
     "vitest": "2.1.8"
   }
