@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/playwright-config.git",
-    "image": "https://opengraph.githubassets.com/61e137fe355fb93ecc0cd450d5c4da065c2347c8aee219abbf3e59802aef7157/jill64/playwright-config"
+    "image": "https://opengraph.githubassets.com/f3a462346349395f1dc0c7b9ff0f1a55670fc1272c30daa1eecba72be7760c06/jill64/playwright-config"
   },
   "publishConfig": {
     "access": "public"
@@ -53,6 +53,6 @@
     "@playwright/test": "1.49.1",
     "@types/node": "22.10.7",
     "typescript": "5.7.3",
-    "vitest": "3.0.2"
+    "vitest": "3.0.3"
   }
 }
