@@ -53,6 +53,6 @@
     "@playwright/test": "1.49.1",
     "@types/node": "22.10.9",
     "typescript": "5.7.3",
-    "vitest": "3.0.3"
+    "vitest": "3.0.4"
   }
 }
