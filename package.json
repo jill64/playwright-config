@@ -39,7 +39,6 @@
   "scripts": {
     "build": "tsc && npx publint",
     "prepack": "npm run build",
-    "test": "vitest",
     "lint": "npx eslint . && npx depcheck",
     "format": "npx prettier -w ."
   },
@@ -52,7 +51,6 @@
     "@jill64/eslint-config-ts": "2.0.4",
     "@playwright/test": "1.50.0",
     "@types/node": "22.10.9",
-    "typescript": "5.7.3",
-    "vitest": "3.0.4"
+    "typescript": "5.7.3"
   }
 }
