@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/playwright-config.git",
-    "image": "https://opengraph.githubassets.com/c76734ed45e5a93e2d6aca0754a8176608351201f9393de57de163b7739030a7/jill64/playwright-config"
+    "image": "https://opengraph.githubassets.com/9219e69c45e535f0e43f5e7a2b897584ffa8755ba471a58b60c3ef5c1b37a1e2/jill64/playwright-config"
   },
   "publishConfig": {
     "access": "public"
@@ -48,7 +48,7 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/prettier-config": "1.0.0",
-    "@jill64/eslint-config-ts": "2.0.17",
+    "@jill64/eslint-config-ts": "2.0.18",
     "@playwright/test": "1.51.0",
     "@types/node": "22.13.10",
     "typescript": "5.8.2"
